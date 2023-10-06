@@ -7,7 +7,7 @@ public class Util {
     private static final String url = "jdbc:mysql://localhost:3306/new_schema" ;
     private static final String user = "root" ;
     private static final String password = "root" ;
-    public Connection getConnection() {
+    public static Connection getConnection() {
         Connection connection;
         try {
             connection = DriverManager.getConnection(url, user, password);
