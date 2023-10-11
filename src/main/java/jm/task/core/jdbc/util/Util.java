@@ -17,9 +17,6 @@ public class Util {
     private static final String password = "root" ;
 
     private static SessionFactory sessionFactory;
-    public Util(){
-
-    }
     public static SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
             try {
@@ -50,15 +47,5 @@ public class Util {
         }
         return sessionFactory;
     }
-//    public static Connection getConnection() {
-//        Connection connection;
-//        try {
-//            connection = DriverManager.getConnection(url, user, password);
-//        } catch (SQLException e) {
-//            throw new RuntimeException(e);
-//        }
-//        return connection;
-//    }
-
 
 }
